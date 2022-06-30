@@ -20,3 +20,28 @@
 // Note:
 // - questo bonus richiederà una riflessione extra per quel che riguarda il calcolo della larghezza delle celle ;)
 
+// MILESTONE2
+
+const grid = document.getElementById('grid');
+const playButton = document.getElementById('play-button');
+
+const createCell = () => {
+    const cellElement = document.createElement('div');
+    cellElement.className = 'cell';
+
+    return cellElement;
+}
+
+const rows = 10;
+const cells = 10;
+const totalCells = rows * cells;
+
+
+for (i = 1; i <= totalCells; i++) {
+
+    const cell = createCell();
+
+    playButton.addEventListener('click', () => {
+        grid.appendChild(cell);
+    })
+}
