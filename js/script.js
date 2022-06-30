@@ -45,4 +45,9 @@ for (i = 1; i <= totalCells; i++) {
     playButton.addEventListener('click', () => {
         grid.appendChild(cell);
     })
+
+    cell.addEventListener('click', (event) => {
+        event.target.classList.toggle('clicked');
+        console.log(cell[i]);
+    })
 }
