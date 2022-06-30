@@ -18,6 +18,8 @@ main {
     width: 10%;
     height: 10%;
     border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
 }
 
 footer {

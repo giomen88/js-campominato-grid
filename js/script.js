@@ -25,9 +25,10 @@
 const grid = document.getElementById('grid');
 const playButton = document.getElementById('play-button');
 
-const createCell = () => {
+const createCell = content => {
     const cellElement = document.createElement('div');
     cellElement.className = 'cell';
+    cellElement.innerText = content;
 
     return cellElement;
 }
@@ -39,7 +40,7 @@ const totalCells = rows * cells;
 
 for (i = 1; i <= totalCells; i++) {
 
-    const cell = createCell();
+    const cell = createCell(i);
 
     playButton.addEventListener('click', () => {
         grid.appendChild(cell);
