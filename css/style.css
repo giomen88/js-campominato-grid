@@ -1,0 +1,27 @@
+header .left,
+header .right {
+    height: 80px;
+    line-height: 80px;
+}
+
+main {
+    height: calc(100vh - 130px);
+    background-color: aquamarine;
+}
+
+#grid {
+    height: 500px;
+    width: 500px;
+}
+
+#grid .cell {
+    width: 10%;
+    height: 10%;
+    border: 1px solid black;
+    /* display: none; */
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+}
